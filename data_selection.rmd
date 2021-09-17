@@ -1,0 +1,31 @@
+---
+title: "Data prep"
+output: html_notebook
+---
+
+This notebook contains the steps taken to select and generate the data and cached results for the BIO-ML data. For that we start by reading the data and select a subset of the 4800 isolates with the following citeria:
+
+- it is fully identified species, no novel or candidate species or metagenome sample
+- it has at least 10 reads (250M bases)
+
+```{r}
+library(data.table)
+
+runs <- fread("data/bioml_run_table.tsv")
+valid <- runs[
+  !grepl("sp\\.|BIOML|metagenome|\\[", Organism) &
+  Bases > 250e6
+]
+valid
+```
+
+Awesome, now let's sample 200 samples from those.
+
+```{r}
+set.seed(2021)
+final <- valid[sample(1:.N, 1000)]
+fwrite(final, "data/course_run_table.tsv", sep="\t")
+fwrite(final[, .(Run)], "data/course_run_ids.txt", col.names = FALSE)
+
+final[, table(Organism)]
+```
