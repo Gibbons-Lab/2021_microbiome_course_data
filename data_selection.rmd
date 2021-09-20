@@ -22,7 +22,7 @@ valid
 Awesome, now let's sample 200 samples from those.
 
 ```{r}
-set.seed(2021)
+set.seed(42)
 final <- valid[sample(1:.N, 1000)]
 fwrite(final, "data/course_run_table.tsv", sep="\t")
 fwrite(final[, .(Run)], "data/course_run_ids.txt", col.names = FALSE)
