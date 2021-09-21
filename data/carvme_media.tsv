@@ -98,7 +98,7 @@ acnam	western_diet_gut	average European diet adjusted for adsorption in the smal
 fuc__L	western_diet_gut	average European diet adjusted for adsorption in the small intestine	EX_fuc__L_e	0.0148986
 gal	western_diet_gut	average European diet adjusted for adsorption in the small intestine	EX_gal_e	0.0148986
 lcts	western_diet_gut	average European diet adjusted for adsorption in the small intestine	EX_lcts_e	0.0074493
-pullulan1200	western_diet_gut	average European diet adjusted for adsorption in the small intestine	EX_pullulan1200_e	1.18e-05
+pullulan1200	western_diet_gut	average European diet adjusted for adsorption in the small intestine	EX_pullulan1200_e	0.0000118
 4hbz	western_diet_gut	average European diet adjusted for adsorption in the small intestine	EX_4hbz_e	0.1
 ncam	western_diet_gut	average European diet adjusted for adsorption in the small intestine	EX_ncam_e	0.1
 ocdcea	western_diet_gut	average European diet adjusted for adsorption in the small intestine	EX_ocdcea_e	0.0681445
@@ -114,14 +114,33 @@ melib	western_diet_gut	average European diet adjusted for adsorption in the smal
 gsn	western_diet_gut	average European diet adjusted for adsorption in the small intestine	EX_gsn_e	0.1
 mobd	western_diet_gut	average European diet adjusted for adsorption in the small intestine	EX_mobd_e	0.1
 meoh	western_diet_gut	average European diet adjusted for adsorption in the small intestine	EX_meoh_e	10
-amylose300	western_diet_gut	average European diet adjusted for adsorption in the small intestine	EX_amylose300_e	4.7e-05
+amylose300	western_diet_gut	average European diet adjusted for adsorption in the small intestine	EX_amylose300_e	0.000047
 lmn30	western_diet_gut	average European diet adjusted for adsorption in the small intestine	EX_lmn30_e	0.000470195
 acmana	western_diet_gut	average European diet adjusted for adsorption in the small intestine	EX_acmana_e	0.1
-starch1200	western_diet_gut	average European diet adjusted for adsorption in the small intestine	EX_starch1200_e	1.18e-05
+starch1200	western_diet_gut	average European diet adjusted for adsorption in the small intestine	EX_starch1200_e	0.0000118
 fald	western_diet_gut	average European diet adjusted for adsorption in the small intestine	EX_fald_e	0.1
-starch	western_diet_gut	average European diet adjusted for adsorption in the small intestine	EX_starch_e	1.18e-05
-amylose	western_diet_gut	average European diet adjusted for adsorption in the small intestine	EX_amylose_e	4.7e-05
+starch	western_diet_gut	average European diet adjusted for adsorption in the small intestine	EX_starch_e	0.0000118
+amylose	western_diet_gut	average European diet adjusted for adsorption in the small intestine	EX_amylose_e	0.000047
 glc__D	western_diet_gut	average European diet adjusted for adsorption in the small intestine	EX_glc__D_e	0.0148986
-pect	western_diet_gut	average European diet adjusted for adsorption in the small intestine	EX_pect_e	3.34e-05
-xylan4	western_diet_gut	average European diet adjusted for adsorption in the small intestine	EX_xylan4_e	3.21e-05
-xylan8	western_diet_gut	average European diet adjusted for adsorption in the small intestine	EX_xylan8_e	3.21e-05
+pect	western_diet_gut	average European diet adjusted for adsorption in the small intestine	EX_pect_e	0.0000334
+xylan4	western_diet_gut	average European diet adjusted for adsorption in the small intestine	EX_xylan4_e	0.0000321
+xylan8	western_diet_gut	average European diet adjusted for adsorption in the small intestine	EX_xylan8_e	0.0000321
+ca2	M9[-O2]	M9 minimal medium (anaerobic)	EX_ca2	0.1
+cl	M9[-O2]	M9 minimal medium (anaerobic)	EX_cl_e	0.1
+cobalt2	M9[-O2]	M9 minimal medium (anaerobic)	EX_cobalt2_e	0.1
+cu2	M9[-O2]	M9 minimal medium (anaerobic)	EX_cu2_e	0.1
+fe2	M9[-O2]	M9 minimal medium (anaerobic)	EX_fe2_e	0.1
+fe3	M9[-O2]	M9 minimal medium (anaerobic)	EX_fe3_e	0.1
+glc__D	M9[-O2]	M9 minimal medium (anaerobic)	EX_glc__D_e	0.1
+h2o	M9[-O2]	M9 minimal medium (anaerobic)	EX_h2o_e	0.1
+h	M9[-O2]	M9 minimal medium (anaerobic)	EX_h_e	0.1
+k	M9[-O2]	M9 minimal medium (anaerobic)	EX_k_e	0.1
+mg2	M9[-O2]	M9 minimal medium (anaerobic)	EX_mg2_e	0.1
+mn2	M9[-O2]	M9 minimal medium (anaerobic)	EX_mn2_e	0.1
+mobd	M9[-O2]	M9 minimal medium (anaerobic)	EX_mobd_e	0.1
+na1	M9[-O2]	M9 minimal medium (anaerobic)	EX_na1_e	0.1
+nh4	M9[-O2]	M9 minimal medium (anaerobic)	EX_nh4_e	0.1
+ni2	M9[-O2]	M9 minimal medium (anaerobic)	EX_ni2_e	0.1
+pi	M9[-O2]	M9 minimal medium (anaerobic)	EX_pi_e	0.1
+so4	M9[-O2]	M9 minimal medium (anaerobic)	EX_so4_e	0.1
+zn2	M9[-O2]	M9 minimal medium (anaerobic)	EX_zn2_e	0.1
