@@ -1,0 +1,37 @@
+---
+title: "Data curation"
+output: html_notebook
+---
+
+Now where we have the assemblies and GTDB taxonomy, we will perform a bit of manual curation to end up with a high quality dataset. First let's read in the GTDB classifications and clean them up a bit. 
+
+```{r}
+library(data.table)
+
+classified <- fread("data/gtdb/assemblies.bac120.summary.tsv")
+bacteria <- classified[, .(
+  assembly = user_genome,
+  classification,
+  fastani_ani,
+  fastani_af,
+  closest_placement_ani,
+  closest_placement_af,
+  msa_percent,
+  classification_method
+)]
+bacteria[, "species" := gsub("_[A-Z]", "", tstrsplit(classification, ";s__")[[2]])]
+bacteria
+```
+There are 18 genomes that could not get aligned.
+Let's also remove two genomes without species assignment and *Bacillus anthracis* which we will assume is a misclassification (nobody had anthrax).
+
+```{r}
+bacteria <- bacteria[!is.na(species) & species != "Bacillus anthracis"]
+nrow(bacteria)
+```
+
+Okay this is our clean list that we will use. 
+
+```{r}
+fwrite(bacteria, "data/curated_assemblies.csv")
+```
