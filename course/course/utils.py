@@ -99,3 +99,4 @@ def gimme_genome(name):
             assembly=assembly, species=species, gtdb=" | ".join(taxa)
         )
     )
+    return assembly
