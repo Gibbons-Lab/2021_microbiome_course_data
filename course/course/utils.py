@@ -12,7 +12,7 @@ num_genomes = 950
 assemblies = pd.read_csv("data/curated_assemblies.csv")
 assembly_url = (
     "https://github.com/Gibbons-Lab/2021_microbiome_course_data/"
-    "raw/main/data/assembled/contigs/{}.fna"
+    "raw/main/data/contigs/{}.fna.gz"
 )
 prefix_map = pd.Series({
     "d": "domain",

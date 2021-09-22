@@ -69,7 +69,7 @@ process megahit {
     tuple val(id), path(reads), path(json), path(report)
 
     output:
-    tuple val(id), path("contigs/${id}.asm1.fna")
+    tuple val(id), path("assembled/${id}.asm1.fna")
 
     """
     megahit -1 ${reads[0]} -2 ${reads[1]} -o contigs -t ${task.cpus} -m 0.5 \
