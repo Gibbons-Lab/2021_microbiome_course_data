@@ -35,3 +35,18 @@ Okay this is our clean list that we will use.
 ```{r}
 fwrite(bacteria, "data/curated_assemblies.csv")
 ```
+
+## Species distribution
+
+```{r, fig.width=4, fig.height=6}
+library(ggplot2)
+theme_minimal() |> theme_set()
+
+bacteria[, "genus" := tstrsplit(species, " ")[[1]]]
+counts <- bacteria[, .N, by="genus"]
+ggplot(counts, aes(x=N, y=reorder(genus, N))) + 
+  geom_vline(xintercept=c(0.01, 0.05) * sum(counts$N), linetype="dashed") +
+  geom_bar(stat="identity") +
+  labs(y="", x="#assemblies")
+ggsave("figures/genus_counts.png", width=4, height=6)
+```
