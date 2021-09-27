@@ -14,8 +14,10 @@ dependencies:
   - fastp
   - megahit
   - multiqc
+  - pigz
   - sra-tools
   - gzip
+  - gtdbtk
   - pip:
     - carveme
     - memote

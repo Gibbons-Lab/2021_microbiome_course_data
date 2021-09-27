@@ -125,7 +125,7 @@ glc__D	western_diet_gut	average European diet adjusted for adsorption in the sma
 pect	western_diet_gut	average European diet adjusted for adsorption in the small intestine	EX_pect_e	0.0000334
 xylan4	western_diet_gut	average European diet adjusted for adsorption in the small intestine	EX_xylan4_e	0.0000321
 xylan8	western_diet_gut	average European diet adjusted for adsorption in the small intestine	EX_xylan8_e	0.0000321
-ca2	M9[-O2]	M9 minimal medium (anaerobic)	EX_ca2	0.1
+ca2	M9[-O2]	M9 minimal medium (anaerobic)	EX_ca2_e	0.1
 cl	M9[-O2]	M9 minimal medium (anaerobic)	EX_cl_e	0.1
 cobalt2	M9[-O2]	M9 minimal medium (anaerobic)	EX_cobalt2_e	0.1
 cu2	M9[-O2]	M9 minimal medium (anaerobic)	EX_cu2_e	0.1
