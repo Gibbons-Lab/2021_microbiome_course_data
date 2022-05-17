@@ -1,4 +1,7 @@
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.6558500.svg)](https://doi.org/10.5281/zenodo.6558500)
+
 ## 2021 ISB Virtual Microbiome Symposium   
+
 # Day 2 course data
 
 This repository contains cached data and processing steps for day 2 of the symposium. This is split into two major pipelines: [1] Obtaining data from the BioML data set and processing it into assemblies and [2] gnerating carveME reconstructions for all assemblies with decent GTDB assignments.
